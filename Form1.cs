@@ -54,11 +54,12 @@ namespace Merge_Pdfs
 		int index = 1;
 		private void btnSelectFiles_Click(object sender, EventArgs e)
 		{
-			lblSuccess.Visible = false;
-			changeStepColor(this.btnStep2, true, Color.DarkSeaGreen, Color.White);
 			DialogResult dr = this.openFileDialog1.ShowDialog();
 			if (dr == System.Windows.Forms.DialogResult.OK)
 			{
+				lblSuccess.Visible = false;
+				changeStepColor(this.btnStep2, true, Color.LightGray, Color.DimGray);
+				changeStepColor(this.btnStep3, true, Color.LightGray, Color.DimGray);
 				// Read the files
 				int i = 0;
 				foreach (String file in openFileDialog1.FileNames)
