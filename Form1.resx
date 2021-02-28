@@ -117,6 +117,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAGcAAAAdCAYAAAC3+HJeAAAABGdBTUEAALGPC/xhBQAAA4tJREFUaEPt
+        mI1NwzAQhREbsAIrsAIrsAIrsAIrsAIrsAIrsAIrlO873UVJkzRuVQoIP+nJvznb9+yz26uOjo6Ojo4j
+        cH19/ZDZjt8EhLmBL/AZ3lvOpo6fRIrxCt+TO/gGb7NLx08gRVCM4uco/5bdOgQOudNBWfx2MJahrMT4
+        gJ4cT1HV3WXX/wUW/gifsxiwDD+yeBEwXglUIc15md5nl1Xsdrtn2HbCMOjF5g7weP7qS435uUNfsxjI
+        uU8EuwQYswTRb02vNkR5hYGsWgdGFabUjx2QTb8SzG8iDnlDmvO+aChhvNrQPgwU5ymbVoEenphP+Ciz
+        eh0YNSS4uKdMzyZO2pOGgLP8HsDOvjjO+z2LF4FrgfUIcPzK+1BYjDyI8ZLCRNgjPfyqw5Cql/NKnLM9
+        BUc2i6uTbwXfK84Qwsg7xkV+CDLOLRxHmTVOQixC1IkZTrd1mV0GRuKlkXkHne1A6twl2/FxAXyn6HGP
+        QeOzecc82Zl8uy+O9oZFaxueNN8tYNexl8RYYswJEW7gB5yEPcrrDwI+1mGGNFN3hAZnIS3b3Z3xXDWf
+        TQdBv7osx45znPqNEPWm8Bi7gzj57f7jIOabxRloqztibKNpfPqU41sY9jwhcLLpKd/Dtg2koTRYjou/
+        IqCnSYeOY+xLfmP7Yoii3m/sP9sd2aYdnXKUXUHbWJwIx5kf5mtZVJ40xIBuGE9azA0euy77tbLEeYeT
+        TU/57RhxnKB04aYRx2EMkmnlFa7C1WLczHb7z9qpU5ST7AraQhyoE+0bjiSt+SqAYwwnBJYgpopivjZi
+        8/jUV/8WLp5ENLlTGDA58YvQSBorYQaVya9dftavhgHadJT2JjuQct07caJIxwJt2hW0lzh+O+lLuear
+        CDrbvCJMHjmUj14X9bWpWrkoMKI8QR8Hq9FhAEZ0VhzpLdDPBQ93yCHQz53tgnRk7VY5+wVtHWy1qzg6
+        X24vsAHYaRo/+7VyMjfF8LRAsf0gwsDs0t5CfuOu1ek6yt1WYUNbpuOy7fadTfgUYKPus7M9+b8biKEw
+        3j0iwhnp4d+TLDAcm8VN0Hd8tD0NJZJUtGHn5Cf/GgjwAH2t+ZQWEc5J/Ydg/YdzOlEnr16++6BvvYi2
+        L7N/Dpwfz+URhhMDPUXrUQQH12vlz4SHvwSc76vMi18hhkdGlg/7HFG8F5oeAh0dHR0dHR0dHd+Cq6sv
+        qRYajrMNZyMAAAAASUVORK5CYII=
+</value>
+  </data>
   <metadata name="fileStructureBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>293, 17</value>
   </metadata>
@@ -125,5 +147,8 @@
   </metadata>
   <metadata name="saveFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>157, 17</value>
+  </metadata>
+  <metadata name="fileStructureBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>293, 17</value>
   </metadata>
 </root>

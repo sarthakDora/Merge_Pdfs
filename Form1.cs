@@ -54,6 +54,8 @@ namespace Merge_Pdfs
 		int index = 1;
 		private void btnSelectFiles_Click(object sender, EventArgs e)
 		{
+			lblSuccess.Visible = false;
+			changeStepColor(this.btnStep2, true, Color.DarkSeaGreen, Color.White);
 			DialogResult dr = this.openFileDialog1.ShowDialog();
 			if (dr == System.Windows.Forms.DialogResult.OK)
 			{
@@ -70,8 +72,15 @@ namespace Merge_Pdfs
 		}
 		private void showFilesOnGrid(List<FileStructure> files)
 		{
-			lblStatus.Text = string.Format("Status : {0} files are ready to merge.", files.Count());
-			this.dataGridView1.DataSource = files.OrderBy(o => o.Order).ToList();
+			if (files != null)
+			{
+				changeStepColor(this.btnStep2, false, Color.DarkSeaGreen, Color.White);
+				btnMerge.Enabled = true;
+				changeStepColor(this.btnMerge, false, Color.SteelBlue, Color.White);
+				lblStatus.Text = string.Format("Status : {0} files are ready to merge.", files.Count());
+				lblInstruction.Text = "(Edit Page Order)";
+				this.dataGridView1.DataSource = files.OrderBy(o => o.Order).ToList();
+			}
 		}
 		private void btnMerge_Click(object sender, EventArgs e)
 		{
@@ -90,6 +99,8 @@ namespace Merge_Pdfs
 					File.Delete(newFileName);
 				}
 				doc.Save(newFileName, FileFormat.PDF);
+				changeStepColor(this.btnStep3, false, Color.DarkSeaGreen, Color.White);
+				lblSuccess.Visible = true;
 				lblStatus.Text = "Status : Files merged and saved";
 				if (this.chkOpen.Checked) Process.Start(newFileName);
 			}
@@ -123,6 +134,26 @@ namespace Merge_Pdfs
 			index = 1;
 			_Files = new List<FileStructure>();
 			lblStatus.Text = "Status :";
+			lblInstruction.Text = string.Empty;
+			changeStepColor(this.btnStep2, true, Color.LightGray, Color.DimGray);
+			changeStepColor(this.btnStep3, true, Color.LightGray, Color.DimGray);
+			changeStepColor(this.btnMerge, true, Color.LightGray, Color.DimGray);
+			lblSuccess.Visible = false;
+			this.btnMerge.Enabled = false;
+		}
+		private void changeStepColor(Button btn, bool reset, Color backColor, Color foreColor)
+		{
+			if(!reset)
+			{
+				btn.BackColor = Color.DarkSeaGreen;
+				btn.ForeColor = Color.White;
+
+			}
+			else
+			{
+				btn.BackColor = backColor;
+				btn.ForeColor = foreColor;
+			}
 		}
 	}
 	public class FileStructure
